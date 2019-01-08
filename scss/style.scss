@@ -67,11 +67,6 @@ $tertiary-color: #fff;
     line-height: 1.5;
     text-align: justify;
   }
-
-  &__paragraph {
-    line-height: 1.5;
-    text-align: justify;
-  }
 }
 
 .quote {
@@ -136,6 +131,7 @@ $tertiary-color: #fff;
     margin: 1rem 0;
     padding-bottom: 1rem;
     text-align: justify;
+    line-height: 1.5;
     border-bottom: 2px solid $secondary-color;
   }
 }
