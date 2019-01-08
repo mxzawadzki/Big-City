@@ -22,147 +22,150 @@ $tertiary-color: #fff;
   width: 100vw;
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box; 
-  //max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .header {
   margin: 2rem 0 0 0;
   padding: 0;
-}
 
-.header__title {
-  font-family: $font-header;
-  font-size: 1.75rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 1rem 1rem 1rem 0;
-  margin: 0;
-  text-align: right;
-  background-color: $primary-color;
+  &__title {
+    font-family: $font-header;
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 1rem 1rem 0;
+    margin: 0;
+    text-align: right;
+    background-color: $primary-color;
+  }
 }
 
 .article {
   margin-bottom: 1rem;
-}
 
-.article__author {
-  margin: 2rem 0 1rem 1rem;
-}
+  &__author {
+    margin: 2rem 0 1rem 1rem;
+  }
 
-.article__image-container {
-  height: 12rem;
-  overflow: hidden;
-}
+  &__image-container {
+    height: 12rem;
+    overflow: hidden;
+  }
 
-.article__image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
-.article__text {
-  margin: 0 1rem;
-}
+  &__text {
+    margin: 0 1rem;
+  }
 
-.article__paragraph {
-  line-height: 1.5;
-  text-align: justify;
+  &__paragraph {
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  &__paragraph {
+    line-height: 1.5;
+    text-align: justify;
+  }
 }
 
 .quote {
   margin-bottom: 1rem;
-}
 
-.quote__image-container {
-  height: 12rem;
-  overflow: hidden;
-}
+  &__image-container {
+    height: 12rem;
+    overflow: hidden;
+  }
 
-.quote__image {
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-}
+  &__image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
 
-.quote__text {
-  background-color: $secondary-color;
-  padding: 1rem;
-}
+  &__text {
+    background-color: $secondary-color;
+    padding: 1rem;
+  }
 
-.quote__paragraph {
-  margin: 0;
-  text-align: right;
-  font-family: $font-header;
-  color: $tertiary-color;
+  &__paragraph {
+    margin: 0;
+    text-align: right;
+    font-family: $font-header;
+    color: $tertiary-color;
+  }
 }
 
 .author {
-  margin-bottom: 1rem;
-}
+  margin-bottom: 4rem;
 
-.author__title {
-  font-family: $font-header;
-  font-size: 1.75rem;
-  font-weight: $font-normal;
-  margin: 2rem 0 1rem 1rem;
-}
+  &__title {
+    font-family: $font-header;
+    font-size: 1.75rem;
+    font-weight: $font-normal;
+    margin: 2rem 0 1rem 1rem;
+  }
 
-.author__image-container {
-  height: auto;
-  width: 100vw;
-}
+  &__image-container {
+    height: auto;
+    width: 100vw;
+  }
 
-.author__image {
-  width: 100%;
-  object-fit: cover;
-}
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
 
-.author__about {
-  padding: 0 1rem;
-}
+  &__about {
+    padding: 0 1rem;
+  }
 
-.author__name {
-  font-family: $font-header;
-  text-transform: uppercase;
-  font-weight: $font-normal;
-  margin: 2rem 0 1rem 0;
-}
+  &__name {
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-weight: $font-normal;
+    margin: 2rem 0 1rem 0;
+  }
 
-.author__description {
-  margin: 1rem 0;
-  padding-bottom: 1rem;
-  text-align: justify;
-  border-bottom: 2px solid $secondary-color;
+  &__description {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    text-align: justify;
+    border-bottom: 2px solid $secondary-color;
+  }
 }
 
 .appreciations {
   text-align: center;
+
+  &__counter {
+    font-size: 4.5rem;
+    font-family: $font-header;
+    margin: 0;
+  }
+
+  &__paragraph {
+    font-family: $font-header;
+    text-transform: uppercase;
+    margin: -1rem 0 2rem 0;
+  }
 }
 
-.appreciations__counter {
-  font-size: 4.5rem;
-  font-family: $font-header;
-  margin: 0;
-}
-
-.appreciations__paragraph {
-  font-family: $font-header;
-  text-transform: uppercase;
-  margin: -1rem 0 2rem 0;
-}
-
-.buttons {
+.interact {
   display: flex;
   justify-content: space-between;
-}
 
-.appreciations__btn {
-  border: none;
-  background-color: $primary-color;
-  font-family: $font-header;
-  //font-size: .75em;
-  text-transform: uppercase;
-  padding: 1rem 0;
-  width: 32%;
+  &__btn {
+    border: none;
+    background-color: $primary-color;
+    font-family: $font-header;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    width: 32%;
+  }
 }
