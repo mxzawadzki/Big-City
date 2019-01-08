@@ -73,14 +73,18 @@ $tertiary-color: #fff;
   margin-bottom: 1rem;
 
   &__image-container {
-    height: 12rem;
+    position: relative;
+    height: 10rem;
     overflow: hidden;
   }
 
   &__image {
+    position: absolute;
+    bottom: 0;
     height: 100%;
-    width: auto;
+    width: 100%;
     object-fit: cover;
+    object-position: left bottom;
   }
 
   &__text {

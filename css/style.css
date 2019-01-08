@@ -65,15 +65,20 @@
 }
 
 .quote__image-container {
-  height: 12rem;
+  position: relative;
+  height: 10rem;
   overflow: hidden;
 }
 
 .quote__image {
+  position: absolute;
+  bottom: 0;
   height: 100%;
-  width: auto;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left bottom;
+     object-position: left bottom;
 }
 
 .quote__text {
