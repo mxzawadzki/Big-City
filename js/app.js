@@ -1,11 +1,26 @@
 const appreciate = document.getElementById('appreciate'),
-  share = document.getElementById('share');
+      share = document.getElementById('share'),
+      comment = document.getElementById('comment');
 let appreciations = document.getElementById('appreciationsCounter'),
-  currentAppreciations = 101;
+    currentAppreciations = 101;
 
+comment.addEventListener('click', addComment);
+share.addEventListener('click', showSocial);
 appreciate.addEventListener('click', addAppreciation)
 appreciate.addEventListener('click', showSomeLove);
-share.addEventListener('click', showSocial);
+
+function addComment() {
+  comment.textContent = 'Thank you!';
+}
+
+function showSocial() {
+  const socialMedia = document.querySelector('.social-media');
+  if (socialMedia.className == 'social-media hidden') {
+    socialMedia.classList.remove('hidden');
+  } else {
+    socialMedia.classList.add('hidden');
+  }
+}
 
 function addAppreciation() {
   currentAppreciations++
@@ -22,13 +37,4 @@ function showSomeLove(e) {
   setTimeout(function () {
     document.querySelector('.appreciate').remove();
   }, 350);
-}
-
-function showSocial() {
-  const socialMedia = document.querySelector('.social-media');
-  if (socialMedia.className == 'social-media hidden') {
-    socialMedia.classList.remove('hidden');
-  } else {
-    socialMedia.classList.add('hidden');
-  }
 }
