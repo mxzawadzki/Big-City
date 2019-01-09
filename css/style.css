@@ -301,6 +301,7 @@
   .article__text-container {
     width: 50vw;
     margin-top: 8rem;
+    margin-left: 1rem;
   }
   .quote__image-container {
     margin: 0 0 0 auto;
