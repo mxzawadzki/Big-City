@@ -195,7 +195,7 @@
   top: 10rem;
   right: 0rem;
   background: #000;
-  width: 0rem;
+  width: 5rem;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -209,6 +209,10 @@
 
 .social-media__btn:hover {
   cursor: pointer;
+}
+
+.hidden {
+  width: 0;
 }
 
 .appreciate {

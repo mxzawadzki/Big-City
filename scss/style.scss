@@ -194,7 +194,7 @@ $border: 2px solid $secondary-color;
   top: 10rem;
   right: 0rem;
   background: $secondary-color;
-  width: 0rem;
+  width: 5rem;
   transition: all 0.4s;
 }
 
@@ -207,6 +207,10 @@ $border: 2px solid $secondary-color;
   &:hover {
     cursor: pointer;
   }
+}
+
+.hidden {
+  width: 0;
 }
 
 .appreciate {

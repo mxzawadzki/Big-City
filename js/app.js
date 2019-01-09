@@ -26,9 +26,9 @@ function showSomeLove(e) {
 
 function showSocial() {
   const socialMedia = document.querySelector('.social-media');
-  if (socialMedia.style.width === '0rem') {
-    socialMedia.style.width = '5rem';
+  if (socialMedia.className == 'social-media hidden') {
+    socialMedia.classList.remove('hidden');
   } else {
-    socialMedia.style.width = '0rem';
+    socialMedia.classList.add('hidden');
   }
 }
