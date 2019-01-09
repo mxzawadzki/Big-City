@@ -17,7 +17,7 @@ function showSomeLove(e) {
   document.body.appendChild(showLove);
   setTimeout(function() {
     document.querySelector('.appreciate').remove();
-  }, 150);
+  }, 350);
 
 }
 

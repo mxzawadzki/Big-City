@@ -173,10 +173,18 @@ $border: 2px solid $secondary-color;
     text-transform: uppercase;
     padding: 1rem 0;
     width: 32%;
+    transition: all .15s ease-in-out;
   }
 
   &__btn:hover {
     cursor: pointer;
+    transform: translateY(-.1rem);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .1);
+  }
+
+  &__btn:active {
+    transform: translateY(0);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .1);
   }
 }
 
@@ -204,20 +212,23 @@ $border: 2px solid $secondary-color;
 }
 
 .appreciate {
+  transform: scale(5);
   position: fixed;
-  animation: showLove 0.2s ease-out;
+  animation: showLove 0.4s ease-out;
   z-index: 2;
 }
 
 @keyframes showLove {
   0% {
     transform: scale(.1);
+    //transform: translateY(0);
     opacity: 1;
   }
 
   100% {
-    transform: scale(7);
-    opacity: 0.5;
+    transform: scale(5);
+    //transform: translateY(-2rem);
+    opacity: 0.2;
   }
 }
 
