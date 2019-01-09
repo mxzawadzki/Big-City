@@ -176,6 +176,62 @@
   cursor: pointer;
 }
 
+.social-media {
+  position: fixed;
+  top: 10rem;
+  right: 0rem;
+  background: #000;
+  width: 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.social-media__btn {
+  display: block;
+  width: 3rem;
+  margin: 1rem;
+  height: auto;
+}
+
+.social-media__btn:hover {
+  cursor: pointer;
+}
+
+.appreciate {
+  position: fixed;
+  -webkit-animation: showLove 0.2s ease-out;
+          animation: showLove 0.2s ease-out;
+  z-index: 2;
+}
+
+@-webkit-keyframes showLove {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(7);
+            transform: scale(7);
+    opacity: 0.5;
+  }
+}
+
+@keyframes showLove {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(7);
+            transform: scale(7);
+    opacity: 0.5;
+  }
+}
+
 @media (min-width: 426px) {
   .author-container {
     display: -ms-grid;

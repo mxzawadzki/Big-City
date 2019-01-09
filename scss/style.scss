@@ -180,6 +180,47 @@ $border: 2px solid $secondary-color;
   }
 }
 
+.social-media {
+  position: fixed;
+  top: 10rem;
+  right: 0rem;
+  background: $secondary-color;
+  width: 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.social-media__btn {
+  display: block;
+  width: 3rem;
+  margin: 1rem;
+  height: auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.appreciate {
+  position: fixed;
+  animation: showLove 0.2s ease-out;
+  z-index: 2;
+}
+
+@keyframes showLove {
+  0% {
+    transform: scale(.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(7);
+    opacity: 0.5;
+  }
+}
+
 @media (min-width: 426px) {
 
   .author-container {
