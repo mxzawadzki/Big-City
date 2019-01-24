@@ -57,7 +57,6 @@
 
 .article__paragraph {
   line-height: 1.5;
-  text-align: justify;
 }
 
 .quote {
@@ -130,7 +129,6 @@
 .author__description {
   margin: 1rem 0;
   padding-bottom: 1rem;
-  text-align: justify;
   line-height: 1.5;
   border-bottom: 2px solid #000;
 }
@@ -179,8 +177,8 @@
   cursor: pointer;
   -webkit-transform: translateY(-0.1rem);
           transform: translateY(-0.1rem);
-  -webkit-box-shadow: 0px 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0.3rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 .interact__btn:active {
